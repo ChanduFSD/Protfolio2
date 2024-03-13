@@ -10,6 +10,7 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import monogo from "../assets/mongodb-logo.png";
 import node from "../assets/node.png";
+import threejs from "../assets/threejs.png";
 
 const Experience = () => {
   const techs = [
@@ -60,6 +61,12 @@ const Experience = () => {
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id:9,
+      src: threejs,
+      title: "Three Js",
+      style: "shadow-green-200",
     },
   ];
 

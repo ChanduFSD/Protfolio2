@@ -9,6 +9,7 @@ export default {
     fontFamily:{
       signature:["Great Vibes"],
     },
+   
   },
   plugins: [],
 }
