@@ -134,7 +134,7 @@ const Portfolio = () => {
           <h5>A Simple app which uses API to fetch the weather teamperature ,windspeed and humidity of a loction...</h5>
           <div className='portfolio__item-cta'>
           <a href="https://github.com/ChanduFSD/Weatherapiapp" className='btn' target='_blank' rel="noreferrer">Github</a>
-          <a href="https://weatherappusingapiapp.netlify.app" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
+          <a href="https://wheatherappapiusaage.netlify.app" className='btn btn-primary' target='_blank' rel="noreferrer">Live Demo</a>
           </div>
           <div className='techHead'>
             <div className='techHead'>
