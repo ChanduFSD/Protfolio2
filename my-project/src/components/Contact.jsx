@@ -1,6 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
+import { MdError } from "react-icons/md";
+
 
 const Contact = () => {
+
+  const [error,setError]=useState(false)
+
+  const handelChange = (val)=>{
+    if(val.match(/^\w+([\.-]?\w+)*@\w+([\.-]?w+)*(\.\w{2,3})+$/)){
+      setError(false)
+    }else{
+      setError(true)
+    }
+  }
+
+
   return (
     <div
       name="contact"
@@ -26,12 +40,18 @@ const Contact = () => {
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             required/>
-            <input
+         <>
+         <input 
+              onChange={(e)=>handelChange(e.target.value)}
               type="mail"
               name="email"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"required
             />
+            {error? <p style={{color:"red"}} className="flex items-center "><MdError />Enter a valid Email</p>:''}
+           </>
+
+
             <textarea
               name="message"
               placeholder="Enter your message"
